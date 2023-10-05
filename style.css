@@ -55,3 +55,8 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.about{
+    padding-top: 6rem;
+    background-color: #a2b3ce;
+    background-image: url('foto.jpg');
+}
