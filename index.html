@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Change Color Background</title>
 </head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input{
+        padding: 1rem;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        background-color: blanchedalmond;
+        font-weight: bold;
+        font-size: 17px;
+        color: goldenrod;
+        transition: .3s;
+    }
+    input:hover{
+        background-color: blueviolet;
+        color: cadetblue;
+        transition: .3s;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        font-size: 30px;
+    }
+
+</style>
 <body>
-    <header>
-        <h1>Portofolio Saya</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
-    
-    <section class=jumbotron id="about">
-        <h2>Dimas Bintang Pratama</h2>
-        <p>Selamat datang di portofolio saya. Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,149.3C384,139,480,85,576,96C672,107,768,181,864,186.7C960,192,1056,128,1152,112C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portofolio</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi proyek 1.</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Proyek 2">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi proyek 2.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Anda dapat menghubungi saya di <a href="mailto:dimasbintangpratama5@gmail.com">dimasbintangpratama5@gmail.com</a>.</p>
-        <p>No handphone saya 083823121775</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Portofolio Saya</p>
-    </footer>
+    <h1 style="color: rgb(214, 50, 50);font-family: 'Segoe UI';">Klik radio button akan mengubah warna latar halaman web</h1><br><br><br><br><br>
+    <form>
+        <input type="button" value="Red" name="woi" onclick="document.bgColor='red'">
+        <input type="button" value="Orange" name="woi" onclick="document.bgColor='orange'">
+        <input type="button" value="Yellow" name="woi" onclick="document.bgColor='yellow'">
+        <input type="button" value="Green" name="woi" onclick="document.bgColor='green'">
+        <input type="button" value="Blue" name="woi" onclick="document.bgColor='blue'">
+        <input type="button" value="Darkblue" name="woi" onclick="document.bgColor='darkblue'">
+        <input type="button" value="Purple" name="woi" onclick="document.bgColor='purple'">
+    </form>
 </body>
 </html>
